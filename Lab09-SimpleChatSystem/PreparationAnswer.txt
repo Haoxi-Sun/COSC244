@@ -1,0 +1,46 @@
+Q1 Explain in your own words why we must use the synchronized() keyword when we access clients.
+   Makes sure clients is not affected by other thread.
+
+Q2 What line of code starts the thread which reads from the keyboard and prints to all clients?
+   Line 15.
+
+Q3 What lines of code does this thread execute?
+   Line 31 to 41.
+
+Q4 What is the response when ChatServer starts?
+   "CharServer started".
+
+Q5 What is the response of the server when this client is started?
+   "Accepted connection from client_1". 
+
+Q6 What is the response in the client window as it starts?
+   " Connected to localhost on port 7777
+     Welcome! You are client_1."
+
+Q7 What is the response of the server when this client is started?
+   "Accepted connection from client_2".
+
+Q8 What is the response in the client window as it starts?
+   " Connected to localhost on port 7777
+     Welcome! You are client_2."
+
+Q9 What is the response in client_2’s window?
+   "client_1: Hello from client 1".
+
+Q10 What is the response in client_3’s window?
+    "client_1: Hello from client 1".
+
+Q11 What is the response in the server’s window?
+    "Sending 'Hello from client 1' to : [client_1, client_2, client_3]".
+
+Q12 What is the response in the server’s window?
+    "client_3 closed connection!"
+
+Q13 What is the response inclient_2’s window?
+    "client_1: this is client 1".
+
+Q14 What is the response in the server’s window?
+    "Sending 'this is client 1' to : [client_1, client_2]".
+
+Q15 What client are you now?
+    client_4.

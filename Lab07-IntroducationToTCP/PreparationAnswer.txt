@@ -1,0 +1,45 @@
+Q1 What is this class meant for?
+   An InputStreamReader is a bridge from byte streams to character streams: It reads bytes and decodes them into characters using a specified charset. The charset that it uses may be specified by name or may be given explicitly, or the platform's default charset may be accpeted.
+
+Q2 What does the explanation say to do for best effciency? Write the suggested statement.
+   For top efficiency, consider wrapping an InputStreamReader within a BufferedReader.
+   BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+Q3 What method do you used to read a line from an input stream? What does it return?
+   public String readLine();
+   A String containing the contents of the line, not including any line termination characters, or null if the end of the stream has been reached.
+
+Q4 What does the method, println(String x) do? What does it return?
+   Prints a String and then terminates the line. This method behaves as though it invokes print(String) and then println().
+ 	Return nothing.
+
+Q5 What does the constructor ServerSocket(int port) do?
+   Creates a server socket, bound to the specified port.
+
+Q6 What does the method accept() do? What does it return?
+   Listens for a connection to be made to this socket and accepts it.
+   Returns the new Socket.
+
+Q7 Which constructor do you think is the most appropriate?
+   Socket(InetAddress address, int port);
+   Which creates a stream socket and connects it to the specified port number at the specified IP address.
+
+Q8 What does the method getInputStream() return?
+   Returns an input stream for this socket.
+
+Q9 What method would you use to have a socket use an OutputStream?
+   public OutputStream getOutputStream();
+   Returna an output stream for this socket.
+
+Q10 When you use the default constructor to create an instance of Date, what is it initialized with?
+    Allocates a Date object and initializes it so that it represents the time at which it was allocated, measured to the nearest millisecond.
+
+Q11 Write the code fragment required to print the current date and time to standard output.
+    Date date = new Date();
+    int d = date.getDate();
+    long time = date.getTime();
+    System.out.println(d+" "+time);
+
+Q12 In the Usage error message, what is meant by <port> [host]?
+    The error occurred in <port> or [host].
+    

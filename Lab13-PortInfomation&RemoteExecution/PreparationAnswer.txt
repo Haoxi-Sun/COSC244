@@ -1,0 +1,9 @@
+Q1. Returns the local port number to which this socketis bound or -1 if the socket is not bound yet.
+
+Q2. Returns the returns IP address to which this socket is connected, or null if the socket is not connected.
+
+Q3. Returns the remote port number to which this socket is connected, or 0 if the socket is not connected yet.
+
+Q4. Prints the remote IP address, remote port number, and local port number to Clients.
+
+Q5. Prints the Clients' remote IP address, Clients' remote port number, and the local port number.

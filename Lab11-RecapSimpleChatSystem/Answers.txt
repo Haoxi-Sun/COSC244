@@ -1,0 +1,27 @@
+Q1 Explain the purpose of the send() method of ClientHandler.
+   Sends the string into the OutputStream.
+
+Q2 Where is the line in send() method of ClientHandler.
+   Line 56.
+
+Q3 Explain the purpose of the toString() method of ClientHandler.
+   Returns the string representation of id( string + int ).
+
+Q4 When a client closes a connection and terminates, and then a new client connects, is the client number recycled? Why or Why not?
+   No recycling, because the count of the clients is not decreased, when a clients closes a connection and terminates.
+
+Q5 List the lines of code executed when the ChatServer starts up to the point where it is listening for its first connection. The list should be in execution order.
+   Lines 21-24;
+   Lines 44-63;
+   Lines 33-39;
+   Lines 64-77.
+
+Q6 If 3 clients have connected to CharServer, how many threads are running assuming no client has terminated. Include the client threads in your count.
+   Server: 4 (1 main thread, listening to socket + 3 ch threads for each connection)
+   Client: 3 each (1 main thread, 2 readwrite threads)
+   Total: 13
+
+Q7 Describe what each thread from Q6 is doing. FOr thread which are performing the same task but for different clients, you should state how many of that particular thread is running. If you did not correctly answer Q6, complete this question after you get the correct answer and before you leave the lab. You will not get the mark for this lab until both questions are answered correctly.
+   4 main threads: 3 main threads work for 3 client handler;
+                   1 main thread works for the server.
+   Other threads work for a BufferedReader and a PrintWriter in each node.

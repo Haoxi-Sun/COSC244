@@ -1,0 +1,26 @@
+Q1. What is the symbol for the exclusive OR operator in Java?
+    The bitwise ^ operator performs a bitwise exclusicve OR operation.
+
+Q2. What is this class meant for?
+    FileInputStream is meant for reading streams of raw bytes such as image data.For reading streams of characters, consider using FileReader.
+
+Q3. Write a statement that uses a constructor to create a newFileInputStreamand opens afile for reading.
+    new FileInputStream("file.txt");
+
+Q4. What method do you use to read a single byte? What does it return?
+    read();
+    Return the next byte (int) of data, or -1 if the end of the file is reached.
+
+Q5. What is this class meant for?
+    FileOutputStream meant for writing stream of raw bytes such as image data.
+
+Q6. Write a statement that uses a constructor to create a newFileOutputStreamand opens afile for writing.
+    FileOutputStream(File file);
+
+Q7. What is the signature of the method which writes single bytes?
+    write(int b);
+
+Q8. What method should you call when you are finished writing output?
+    close();
+
+Q9. Both of the programs you will implement require you to use the command line arguments.To get some practice with this, write a program (you don’t have to compile it) whichtakes two arguments. The first argument should be a word and the second argumentshould be a number which determines how many times to print out the word.

@@ -1,0 +1,42 @@
+Exercise 1.
+
+  Absolute or relative paths?
+  
+  /home/cshome/u/username   An absolute path.
+                  244/bin  	A relative path.
+                  /bin/ls  	An absolute path.
+                 bin/sort  	A relative path.
+              /usr/bin/wc  	An absolute path.
+   home/cshome/u/username  	A relative path.
+     ../cshome/u/username  	A relative path.
+                 ~/newdir  	An absolute path.
+                /bin/sort	An absolute path.
+
+Exercise 2.
+
+Files in /home/cshome/coursework/244/files/01         
+
+Alice.txt
+Daniel.jpg
+France.jpg
+sample-text.txt
+another_directory
+dir1
+greeting.txt
+
+
+Files in /home/cshome/coursework/244/files/01/dir1	1file.txt
+
+another_file.txt
+long-list-files.txt
+
+
+Exercise 3.
+
+  1.	C-a
+  2. 	C-e
+  3.	C-k
+  4.	C-x 2(split-window-below) or C-x 3(split-window-right)
+  5.	C-x 1
+  6.	Redraw the screen, centered at the cursor.
+  7.	C-a; C-e; C-k
